@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/de-marauder/spicy_soups/static/css/main.073c9b0a.css",
+    "main.js": "/de-marauder/spicy_soups/static/js/main.bc96fecd.js",
+    "static/js/787.d0d7facf.chunk.js": "/de-marauder/spicy_soups/static/js/787.d0d7facf.chunk.js",
+    "static/media/logo.svg": "/de-marauder/spicy_soups/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/de-marauder/spicy_soups/index.html",
+    "main.073c9b0a.css.map": "/de-marauder/spicy_soups/static/css/main.073c9b0a.css.map",
+    "main.bc96fecd.js.map": "/de-marauder/spicy_soups/static/js/main.bc96fecd.js.map",
+    "787.d0d7facf.chunk.js.map": "/de-marauder/spicy_soups/static/js/787.d0d7facf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.bc96fecd.js"
+  ]
+}
