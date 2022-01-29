@@ -1,0 +1,42 @@
+.Catalogue {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    padding: 50px;
+}
+
+.Catalogue h1 {
+    font-size: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Catalogue h3 {
+    font-size: 2rem;
+    /* margin: auto;
+    width: auto;
+    color: black; */
+}
+
+.CatalogueItems {
+    display: column;
+    padding: 50px 20px;
+    gap: 1em;
+    columns: 3;
+}
+
+/* For medium screens */
+@media (max-width: 700px) {
+    .CatalogueItems {
+        columns: 2;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 450px) {
+    .CatalogueItems {
+        columns: 1;
+    }
+}
+
+.CatalogueItems div {
+    break-inside: avoid;
+}

@@ -1,0 +1,50 @@
+.Card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* max-width: 500px; */
+    background: tomato;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border-radius: 100px;
+    box-shadow: 0 4px 7px #999;
+    background: linear-gradient(to right, red, purple);
+}
+
+
+.ImageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Card img {
+    width: 97%;
+    height: 97%;
+    border-radius: 97px;
+    transition: ease 1s;
+}
+.Card img:hover {
+    width: 110%;
+    height: 110%
+}
+
+.Text {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    transition: ease 700ms;
+}
+
+.Card:hover .Text {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: white;
+    font-size: 20px;
+}

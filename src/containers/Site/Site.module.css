@@ -1,0 +1,7 @@
+.Site .h3 {
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    color: wheat;
+}
