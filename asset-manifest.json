@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/spicy_soups/static/css/main.ab62e700.css",
-    "main.js": "/spicy_soups/static/js/main.a152d89d.js",
+    "main.css": "/spicy_soups/static/css/main.0a1aa3ac.css",
+    "main.js": "/spicy_soups/static/js/main.a34cd2ac.js",
     "static/js/787.d0d7facf.chunk.js": "/spicy_soups/static/js/787.d0d7facf.chunk.js",
     "static/media/Afang-soup-16.jpg": "/spicy_soups/static/media/Afang-soup-16.211d801921c2cd19b42e.jpg",
     "static/media/Plate_with_spoon_knife_and_fork.jpg": "/spicy_soups/static/media/Plate_with_spoon_knife_and_fork.76d132ee1b5ac1947e09.jpg",
     "static/media/wood background1.png": "/spicy_soups/static/media/wood background1.64f2ea02c605ee3127fc.png",
+    "static/media/Nigerian jollof rice and fish.jpg": "/spicy_soups/static/media/Nigerian jollof rice and fish.69bca17e8544280d1321.jpg",
+    "static/media/IMG_7956.jpg": "/spicy_soups/static/media/IMG_7956.f061b288d22a7ec80e0e.jpg",
     "static/media/egusi.jfif": "/spicy_soups/static/media/egusi.5975af0869cdbdcf9e9f.jfif",
+    "static/media/images (1).jfif": "/spicy_soups/static/media/images (1).c5b32222f87b50a5d6b8.jfif",
+    "static/media/okrajfif.jfif": "/spicy_soups/static/media/okrajfif.071a401eca5b14ced6c9.jfif",
+    "static/media/images.jfif": "/spicy_soups/static/media/images.6b9914b9b94bc3a50c77.jfif",
     "static/media/fufu and soup.jfif": "/spicy_soups/static/media/fufu and soup.b0dc5e6243e1c74f4424.jfif",
     "index.html": "/spicy_soups/index.html",
-    "main.ab62e700.css.map": "/spicy_soups/static/css/main.ab62e700.css.map",
-    "main.a152d89d.js.map": "/spicy_soups/static/js/main.a152d89d.js.map",
+    "main.0a1aa3ac.css.map": "/spicy_soups/static/css/main.0a1aa3ac.css.map",
+    "main.a34cd2ac.js.map": "/spicy_soups/static/js/main.a34cd2ac.js.map",
     "787.d0d7facf.chunk.js.map": "/spicy_soups/static/js/787.d0d7facf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab62e700.css",
-    "static/js/main.a152d89d.js"
+    "static/css/main.0a1aa3ac.css",
+    "static/js/main.a34cd2ac.js"
   ]
 }
