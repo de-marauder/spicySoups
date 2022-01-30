@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spicy_soups/static/css/main.1bd2879c.css",
-    "main.js": "/spicy_soups/static/js/main.07c4cf70.js",
+    "main.css": "/spicy_soups/static/css/main.c8a116f9.css",
+    "main.js": "/spicy_soups/static/js/main.8a2e84d1.js",
     "static/js/787.d0d7facf.chunk.js": "/spicy_soups/static/js/787.d0d7facf.chunk.js",
     "static/media/Afang-soup-16.jpg": "/spicy_soups/static/media/Afang-soup-16.211d801921c2cd19b42e.jpg",
     "static/media/Plate_with_spoon_knife_and_fork.jpg": "/spicy_soups/static/media/Plate_with_spoon_knife_and_fork.76d132ee1b5ac1947e09.jpg",
@@ -15,12 +15,12 @@
     "static/media/images.jfif": "/spicy_soups/static/media/images.6b9914b9b94bc3a50c77.jfif",
     "static/media/fufu and soup.jfif": "/spicy_soups/static/media/fufu and soup.b0dc5e6243e1c74f4424.jfif",
     "index.html": "/spicy_soups/index.html",
-    "main.1bd2879c.css.map": "/spicy_soups/static/css/main.1bd2879c.css.map",
-    "main.07c4cf70.js.map": "/spicy_soups/static/js/main.07c4cf70.js.map",
+    "main.c8a116f9.css.map": "/spicy_soups/static/css/main.c8a116f9.css.map",
+    "main.8a2e84d1.js.map": "/spicy_soups/static/js/main.8a2e84d1.js.map",
     "787.d0d7facf.chunk.js.map": "/spicy_soups/static/js/787.d0d7facf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bd2879c.css",
-    "static/js/main.07c4cf70.js"
+    "static/css/main.c8a116f9.css",
+    "static/js/main.8a2e84d1.js"
   ]
 }
