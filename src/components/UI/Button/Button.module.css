@@ -1,20 +1,31 @@
-.Button {
+.Submit {
+    padding: 15px 20px;
+    border: solid 2px rgb(140, 179, 64);
+    margin: auto;
+    width: min-content;
+    font-size: 18px;
+}
+.Submit:hover {
+    background: rgb(140, 179, 64);
+}
+
+.Menu {
     width: 100px;
-    background: linear-gradient(to right, red, purple);
+    background: linear-gradient(to right, green, rgb(206, 247, 27));
     border-radius: 80px 0 0 80px ;
     z-index: 50;
     position: fixed;
     transition: ease 1s;
 }
-
-.Button:hover {
+.Menu:hover {
     width: 110px;
-    background: linear-gradient(to right, purple, red);
+    color: black;
+    background: linear-gradient(to right, rgb(206, 247, 27), green);
 }
 
 /* Bigger screens */
 @media (min-width: 700px) {
-    .Button {
+    .Menu {
         font-size: 22px;
     }
 }

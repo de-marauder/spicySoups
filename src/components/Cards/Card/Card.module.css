@@ -4,11 +4,12 @@
     justify-content: center;
     /* max-width: 500px; */
     background: tomato;
-    margin-bottom: 1em;
+    margin: 1.5em 0;
+    /* margin: 50px 20px; */
     overflow: hidden;
     border-radius: 100px;
     box-shadow: 0 4px 7px #999;
-    background: linear-gradient(to right, red, purple);
+    background: linear-gradient(to right, rgb(175, 214, 3), rgb(0, 212, 0));
 }
 
 

@@ -6,7 +6,7 @@
 }
 .Title {
     font-family: 'Neonderthaw', cursive;
-    color: rgb(94, 18, 28);
+    color: rgb(3, 78, 34);
     font-size: 5rem;
     padding: 2rem 0px ;
     width: 75%;
@@ -45,7 +45,7 @@
 @media (min-width: 451px) {
     .Landing .TitleWrapper p {
         font-size: 2rem;
-        right: -145px;
+        right: -135px;
         bottom: 74px;
     }
 }
@@ -72,10 +72,10 @@
 
 @keyframes title {
     50% {
-        color: rgb(238, 4, 4);
+        color: rgb(102, 180, 0);
     }
     100% {
-        color: red;
+        color: green;
     }
 }
 
@@ -108,7 +108,7 @@
     position: absolute;
     display: grid;
     place-items: center;
-    background: linear-gradient(to right, rgb(161, 103, 161), red);
+    background: linear-gradient(to right, rgb(206, 247, 27), green);
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -137,6 +137,10 @@
 /* Images on smaller phones */
 
 @media (max-height: 540px) {
+    .ImagesWrapper {
+        position: relative;
+        top: 100px;
+    }
     .Images {
         top: -90px;
         left: -20px;

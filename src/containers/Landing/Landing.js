@@ -16,7 +16,7 @@ class Landing extends Component {
 
                     <div className={classes.TitleWrapper}>
                         <h1 className={classes.Title}>Spicy <span>soups</span></h1>
-                        <p>restaurant</p>
+                        <p>The Naija way</p>
                     </div> 
                     <div className={classes.ImagesWrapper}>
                         <div className={classes.Images}>

@@ -5,6 +5,7 @@ import Backdrop from '../../components/UI/Backdrop/Backdrop';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Catalogue from '../Catalogue/Catalogue';
 import Landing from '../Landing/Landing';
+import Footer from '../../components/Footer/Footer';
 
 import classes from './Site.module.css'
 
@@ -38,13 +39,14 @@ class Site extends Component {
         return (
             <div className={classes.Site}>
                 <Backdrop doStuff={() => { this.menuToggler() }} style={backdropStyle} />
-                <Button doStuff={() => { this.menuToggler() }} style={{ position: 'fixed', top: '20px', right: '0' }}>
+                <Button class={'Menu'} doStuff={() => { this.menuToggler() }} style={{ position: 'fixed', top: '20px', right: '0' }}>
                     <h3 className={classes.h3} style={{ left: '0.5em' }}>{!this.state.backdrop ? 'Menu' : 'X'} </h3>
                 </Button>
                 <Sidebar style={sidebarStyle} />
 
                 <Landing />
                 <Catalogue />
+                <Footer />
             </div>
         )
     }
