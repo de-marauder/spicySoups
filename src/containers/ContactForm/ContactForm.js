@@ -102,7 +102,7 @@ class ContactForm extends Component {
                                 {input}
                             </div>
                             
-                            <input type="hidden" name="_next" value="http://spicysoups.tk" />
+                            <input type="hidden" name="_next" value="http://localhost:3000/spicy_soups" />
                             <input type="hidden" name="_captcha" value="false" />
                             <Button 
                                 class='Submit' 

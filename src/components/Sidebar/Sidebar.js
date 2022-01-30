@@ -8,10 +8,10 @@ const sidebar = (props) => {
             <img className={classes.sidebarIcon} src={img} alt='' />
             <hr />
             <ul>
-                <li><a href='#catalogue'>Catalogue</a></li>
-                <li><a href='#'>Cart</a></li>
-                <li><a href='#'>About Us</a></li>
-                <li><a href='#contact-us'>Contact Us</a></li>
+                <li><a onClick={props.doStuff} href='#catalogue'>Catalogue</a></li>
+                <li><a onClick={props.doStuff} href='#'>Cart</a></li>
+                <li><a onClick={props.doStuff} href='#'>About Us</a></li>
+                <li><a onClick={props.doStuff} href='#contact-us'>Contact Us</a></li>
             </ul>
             <hr />
         </div>

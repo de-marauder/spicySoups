@@ -42,7 +42,7 @@ class Site extends Component {
                 <Button class={'Menu'} doStuff={() => { this.menuToggler() }} style={{ position: 'fixed', top: '20px', right: '0' }}>
                     <h3 className={classes.h3} style={{ left: '0.5em' }}>{!this.state.backdrop ? 'Menu' : 'X'} </h3>
                 </Button>
-                <Sidebar style={sidebarStyle} />
+                <Sidebar doStuff={() => { this.menuToggler() }} style={sidebarStyle} />
 
                 <Landing />
                 <Catalogue />

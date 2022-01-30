@@ -1,11 +1,11 @@
 import classes from './Button.module.css'
 
-const menu = (props) => {
+const button = (props) => {
     return (
-        <div onClick={props.doStuff} style={props.style} className={classes[props.class]}>
+        <button type={props.type} onClick={props.doStuff} style={props.style} className={classes[props.class]}>
             {props.children}
-        </div>
+        </button>
     )
 }
 
-export default menu;
+export default button;
