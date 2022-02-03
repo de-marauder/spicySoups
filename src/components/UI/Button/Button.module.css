@@ -1,8 +1,7 @@
 .Submit {
     padding: 15px 20px;
     border: solid 2px rgb(140, 179, 64);
-    margin: auto;
-    width: min-content;
+    /* margin: auto; */
     font-size: 18px;
     color: inherit;
     background: transparent
@@ -22,8 +21,7 @@
     transition: ease 1s;
 }
 .Menu:hover {
-    width: 110px;
-    color: black;
+    width: 110px; 
     background: linear-gradient(to right, rgb(206, 247, 27), green);
 }
 
@@ -32,4 +30,27 @@
     .Menu {
         font-size: 22px;
     }
+}
+
+.CheckOut {
+    padding: 10px 2rem;
+    border: green 2px solid;
+    color: green;
+    background: transparent;
+    text-align: center;
+    font-size: 2em
+}
+.CheckOut:hover {
+    background: linear-gradient(to right, green, rgb(206, 247, 27));
+    color: wheat;
+    border: #f3f4f5 2px solid;
+    font-weight: bold;
+}
+.CheckOut:disabled {
+    background: #777;
+    color: #fff;
+    border: #f3f4f5 2px solid;
+}
+.CheckOut:disabled:hover {
+    font-weight: normal
 }

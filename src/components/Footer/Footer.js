@@ -29,7 +29,7 @@ const footer = () => {
                             <stop id="stop2" stopColor="rgba(251, 168, 31, 1)" offset="100%"></stop>
                         </linearGradient>
                     </defs>
-                    <path fill="url(#sw-gradient1)" d="M14.5,-19.4C17,-12,16.1,-6,17.4,1.3C18.7,8.6,22.2,17.1,19.7,18.1C17.1,19.1,8.6,12.5,1.4,11.1C-5.7,9.6,-11.4,13.4,-15.5,12.4C-19.5,11.4,-21.8,5.7,-20.3,1.5C-18.8,-2.7,-13.5,-5.4,-9.5,-12.9C-5.4,-20.4,-2.7,-32.7,1.6,-34.3C6,-35.9,12,-26.9,14.5,-19.4Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{ "transition": "all 0.3s ease 0s;" }}></path>
+                    <path fill="url(#sw-gradient1)" d="M14.5,-19.4C17,-12,16.1,-6,17.4,1.3C18.7,8.6,22.2,17.1,19.7,18.1C17.1,19.1,8.6,12.5,1.4,11.1C-5.7,9.6,-11.4,13.4,-15.5,12.4C-19.5,11.4,-21.8,5.7,-20.3,1.5C-18.8,-2.7,-13.5,-5.4,-9.5,-12.9C-5.4,-20.4,-2.7,-32.7,1.6,-34.3C6,-35.9,12,-26.9,14.5,-19.4Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{ "transition": "all 0.3s ease 0s" }}></path>
                 </svg>
 
                 <svg className={classes.SVG + ' ' + classes.SVG2} id="sw-js-blob-svg2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const footer = () => {
                             <stop id="stop1" stopColor="rgba(135.211, 240.379, 127.654, 1)" offset="0%"></stop>
                             <stop id="stop2" stopColor="rgba(251, 168, 31, 1)" offset="100%"></stop>
                         </linearGradient>                    </defs>
-                    <path fill="url(#sw-gradient2)" d="M21.5,-16.2C29.1,-13.8,37.4,-6.9,39.7,2.3C42.1,11.6,38.5,23.2,30.8,30.5C23.2,37.7,11.6,40.7,4.5,36.1C-2.6,31.6,-5.1,19.6,-6.4,12.4C-7.7,5.1,-7.7,2.6,-8.9,-1.2C-10.1,-5,-12.5,-9.9,-11.2,-12.3C-9.9,-14.7,-5,-14.5,1,-15.4C6.9,-16.4,13.8,-18.6,21.5,-16.2Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{ "transition": "all 0.3s ease 0s;" }}></path>
+                    <path fill="url(#sw-gradient2)" d="M21.5,-16.2C29.1,-13.8,37.4,-6.9,39.7,2.3C42.1,11.6,38.5,23.2,30.8,30.5C23.2,37.7,11.6,40.7,4.5,36.1C-2.6,31.6,-5.1,19.6,-6.4,12.4C-7.7,5.1,-7.7,2.6,-8.9,-1.2C-10.1,-5,-12.5,-9.9,-11.2,-12.3C-9.9,-14.7,-5,-14.5,1,-15.4C6.9,-16.4,13.8,-18.6,21.5,-16.2Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{ "transition": "all 0.3s ease 0s" }}></path>
                 </svg>
 
                 <svg className={classes.SVG + ' ' + classes.SVG3} id="sw-js-blob-svg3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">

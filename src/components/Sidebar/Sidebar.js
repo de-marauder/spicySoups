@@ -1,20 +1,30 @@
+import { NavLink as Link } from 'react-router-dom';
 
 import img from '../../assets/images/Plate_with_spoon_knife_and_fork.jpg';
+import CartCounter from '../../containers/Cart/CartCounter';
+import Button from '../UI/Button/Button';
 import classes from './Sidebar.module.css'
 
 const sidebar = (props) => {
     return (
-        <div style={props.style} className={classes.Sidebar}>
+        <aside style={props.style} className={classes.Sidebar}>
             <img className={classes.sidebarIcon} src={img} alt='' />
             <hr />
             <ul>
-                <li><a onClick={props.doStuff} href='#catalogue'>Catalogue</a></li>
-                <li><a onClick={props.doStuff} href='#'>Cart</a></li>
-                <li><a onClick={props.doStuff} href='#'>About Us</a></li>
-                <li><a onClick={props.doStuff} href='#contact-us'>Contact Us</a></li>
+                <li onClick={props.doStuff}><Link to='/'>Home</Link></li>
+                <li onClick={props.doStuff}><Link to='/#catalogue'>Catalogue</Link></li>
+                <li onClick={props.doStuff}>
+                    <Link to='/cart'>
+                        Cart
+                        {(props.cartCounter !== 0) ? <CartCounter counter={props.cartCounter} style={{ left: '70px' }} /> : null}
+                    </Link>
+                </li>
+                <li onClick={props.doStuff}><Link to='/#about'>About Us</Link></li>
+                <li onClick={props.doStuff}><Link to='/contact'>Contact Us</Link></li>
             </ul>
             <hr />
-        </div>
+            <Button disabled={(props.cartCounter === 0) ? true : false} class='CheckOut' style={{ fontSize: '20px', width: '100%' }} >CHECK OUT</Button>
+        </aside>
     )
 }
 

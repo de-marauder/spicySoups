@@ -12,7 +12,41 @@
     background: linear-gradient(to right, rgb(175, 214, 3), rgb(0, 212, 0));
 }
 
+.ToCart {
+    position: absolute;
+    line-height: 2.5em;
+    width: 2em;
+    height:2.5em;
+    top: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: 0
+}
+.Card .ToCart:disabled {
+    background-color: #777
+}
+.Card .ToCart:disabled:hover {
+    background-color: #777
+}
 
+.Card .AddToCart {
+    /* border-radius: 0 100px 0 0; */
+    right: 20px;
+    background-color: rgb(8, 122, 4);
+}
+.Card .AddToCart:hover {
+    background: rgb(8, 122, 4, 0.5);
+}
+.Card .RemoveFromCart {
+    /* border-radius: 100px 0 0 0; */
+    left: 20px;
+    background-color: rgb(248, 3, 3);
+}
+.Card .RemoveFromCart:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
 .ImageWrapper {
     position: relative;
     width: 100%;
@@ -29,7 +63,7 @@
     border-radius: 97px;
     transition: ease 1s;
 }
-.Card img:hover {
+.Card:hover img {
     width: 110%;
     height: 110%
 }
