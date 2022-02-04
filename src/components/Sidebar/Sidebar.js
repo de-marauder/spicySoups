@@ -6,6 +6,7 @@ import Button from '../UI/Button/Button';
 import classes from './Sidebar.module.css'
 
 const sidebar = (props) => {
+
     return (
         <aside style={props.style} className={classes.Sidebar}>
             <img className={classes.sidebarIcon} src={img} alt='' />
@@ -16,14 +17,18 @@ const sidebar = (props) => {
                 <li onClick={props.doStuff}>
                     <Link to='/cart'>
                         Cart
-                        {(props.cartCounter !== 0) ? <CartCounter counter={props.cartCounter} style={{ left: '70px' }} /> : null}
+                        {(props.cartCounter !== 0) ?
+                            <CartCounter counter={props.cartCounter} />
+                            : null}
                     </Link>
                 </li>
                 <li onClick={props.doStuff}><Link to='/#about'>About Us</Link></li>
                 <li onClick={props.doStuff}><Link to='/contact'>Contact Us</Link></li>
             </ul>
             <hr />
-            <Button disabled={(props.cartCounter === 0) ? true : false} class='CheckOut' style={{ fontSize: '20px', width: '100%' }} >CHECK OUT</Button>
+            <Link to='/cart' >
+                <Button disabled={(props.cartCounter === 0) ? true : false} class='CheckOut' style={{ fontSize: '20px', width: '100%' }} >CHECK OUT</Button>
+            </Link>
         </aside>
     )
 }

@@ -7,9 +7,9 @@ import { Route, Routes } from 'react-router-dom';
 import Button from '../../components/UI/Button/Button';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import Catalogue from '../Catalogue/Catalogue';
+// import Catalogue from '../Catalogue/Catalogue';
 import Home from '../../components/Home/Home';
-import Landing from '../Landing/Landing';
+// import Landing from '../Landing/Landing';
 import Footer from '../../components/Footer/Footer';
 import Cart from '../Cart';
 import NotFound from '../../components/Error/NotFound';
@@ -106,12 +106,9 @@ class Site extends Component {
                 /> */}
                 < Routes>
                     <Route path={'/'} exact element={<Home />} />
-                    {/* <Route path={'/#catalogue'} exact element={<Catalogue />} /> */}
-                {/* </ Routes>
-                < Routes> */}
-                    <Route path={'/cart'} exact element={<Cart />} />
-                {/* </ Routes>
-                <Routes> */}
+
+                    <Route path={'/cart'} element={<Cart />} />
+
                     <Route path={'/*'} element={<NotFound />} />
                 </Routes>
                 {/* <Landing /> */}

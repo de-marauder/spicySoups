@@ -27,6 +27,11 @@ export const cartReducer = (state = initialState, action) => {
                 cart: newCart,
                 counter: newCart.length
             }
+        case 'EMPTY_CART':
+            return {
+                ...state,
+                cart: []
+             }
         case 'CHECKOUT':
             return {
                 ...state,

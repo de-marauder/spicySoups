@@ -16,7 +16,7 @@ const Catalogue = (props) => {
             <div className={classes.CatalogueItems}>
                 <Cards cart={props.cart} addMeal={props.addItemToCart} removeMeal={props.removeItemFromCart} />
             </div>
-            <Link to='/checkout' >
+            <Link to='/cart' >
                 <Button class='CheckOut' disabled={(props.cart.length === 0) ? true : false} >CHECK OUT</Button>
             </Link>
         </div >

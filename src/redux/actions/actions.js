@@ -13,6 +13,11 @@ export const removeFromCart = (meal) => {
         data: meal
     }
 }
+export const emptyCart = () => {
+    return {
+        type: actionType.EMPTY_CART,
+    }
+}
 
 export const checkOut = () => {
     return {

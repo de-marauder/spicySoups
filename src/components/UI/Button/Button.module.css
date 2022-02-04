@@ -1,7 +1,7 @@
 .Submit {
     padding: 15px 20px;
     border: solid 2px rgb(140, 179, 64);
-    /* margin: auto; */
+    /* margin: 0 auto; */
     font-size: 18px;
     color: inherit;
     background: transparent
@@ -53,4 +53,28 @@
 }
 .CheckOut:disabled:hover {
     font-weight: normal
+}
+
+.Order {
+    margin: 0 auto;
+    border: solid 2px white; 
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 1px #777;
+}
+.Order:hover {
+    background: white;
+    color: #8cb340;
+    box-shadow: none;
+    position: relative;
+    left: 3px;
+    top: 3px;
+}
+
+.Cancel {
+    background: rgb(235, 61, 61);
+    font-weight: bold;
+}
+.Cancel:hover {
+    color: rgb(235, 61, 61)
 }
