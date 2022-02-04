@@ -22,6 +22,8 @@ import {
 } from './StyledCart'
 // import { removeFromCart } from '../../redux/actions/actions';
 
+const home = '/spicy_soups'
+
 const Cart = (props) => {
 
     let totalPrice = 0;
@@ -66,7 +68,7 @@ const Cart = (props) => {
                                 orders :
                                 <div>
                                     <h1>Your cart is empty!</h1>
-                                    <Link to='/'>Make an order</Link>
+                                    <Link to={home + '/'}>Make an order</Link>
                                 </div>}
                         </OrderDiv>
                     </OrderList>
