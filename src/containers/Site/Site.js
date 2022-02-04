@@ -17,6 +17,8 @@ import CartCounter from '../Cart/CartCounter';
 
 import classes from './Site.module.css'
 
+const home = '/spicy_soups'
+
 class Site extends Component {
 
     state = {
@@ -28,43 +30,19 @@ class Site extends Component {
         this.setState({ backdrop: !this.state.backdrop, sideBarToggler: !this.state.sideBarToggler })
     }
 
-    // routes = () => {
-    //     return (
-    //         <>
-    //             {/* < Routes> */}
-    //             <Route path={'/'} exact element={<Landing />} />
-    //             {/* //  </ Routes > */}
-    //             {/* // < Routes> */}
-    //             <Route path={'/catalogue'} exact element={<Catalogue />} />
-    //             {/* // {/* </ Routes> */}
-    //             {/* // < Routes> */}
-    //             <Route path={'/cart'} exact element={<Cart />} />
-    //             {/* // </ Routes> */}
-    //             {/* // < Routes> */}
-    //             <Route path={'/contact-us'} exact element={<Footer />} />
-    //             {/* // </ Routes> */}
-    //             {/* // <Routes> */}
-    //             <Route path={'/'} element={<NotFound />} />
-    //             {/* // </Routes> 4       */}
-    //         </>
-
-    //     )
+    // hashLinkScroll = () => {
+    //     const { hash } = window.location;
+    //     if (hash !== '') {
+    //         // Push onto callback queue so it runs after the DOM is updated,
+    //         // this is required when navigating from a different page so that
+    //         // the element is rendered on the page before trying to getElementById.
+    //         setTimeout(() => {
+    //             const id = hash.replace('#', '');
+    //             const element = document.getElementById(id);
+    //             if (element) element.scrollIntoView();
+    //         }, 0);
+    //     }
     // }
-
-
-    hashLinkScroll = () => {
-        const { hash } = window.location;
-        if (hash !== '') {
-            // Push onto callback queue so it runs after the DOM is updated,
-            // this is required when navigating from a different page so that
-            // the element is rendered on the page before trying to getElementById.
-            setTimeout(() => {
-                const id = hash.replace('#', '');
-                const element = document.getElementById(id);
-                if (element) element.scrollIntoView();
-            }, 0);
-        }
-    }
 
     render() {
         let backdropStyle;
@@ -105,11 +83,11 @@ class Site extends Component {
                     onUpdate={this.hashLinkScroll}
                 /> */}
                 < Routes>
-                    <Route path={'/'} exact element={<Home />} />
+                    <Route path={home} exact element={<Home />} />
 
-                    <Route path={'/cart'} element={<Cart />} />
+                    <Route path={home + '/cart'} element={<Cart />} />
 
-                    <Route path={'/*'} element={<NotFound />} />
+                    <Route path={home + '/*'} element={<NotFound />} />
                 </Routes>
                 {/* <Landing /> */}
                 {/* <Catalogue /> */}

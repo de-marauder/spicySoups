@@ -10,13 +10,15 @@ const Button = (props) => {
     })
     // console.log(classList)
     return (
-        <button type={props.type}
-            disabled={props.disabled}
-            onClick={props.doStuff}
-            style={props.style}
-            className={classList.join(' ')}>
-            {props.children}
-        </button>
+        <div className={classes.ButtonWrapper}>
+            <button type={props.type}
+                disabled={props.disabled}
+                onClick={props.doStuff}
+                style={props.style}
+                className={classList.join(' ')}>
+                {props.children}
+            </button>
+        </div>
     )
 }
 

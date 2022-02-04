@@ -5,6 +5,8 @@ import CartCounter from '../../containers/Cart/CartCounter';
 import Button from '../UI/Button/Button';
 import classes from './Sidebar.module.css'
 
+const home = '/spicy_soups'
+
 const sidebar = (props) => {
 
     return (
@@ -12,22 +14,22 @@ const sidebar = (props) => {
             <img className={classes.sidebarIcon} src={img} alt='' />
             <hr />
             <ul>
-                <li onClick={props.doStuff}><Link to='/'>Home</Link></li>
-                <li onClick={props.doStuff}><Link to='/#catalogue'>Catalogue</Link></li>
+                <li onClick={props.doStuff}><Link to={home + '/'}>Home</Link></li>
+                <li onClick={props.doStuff}><Link to={home + '/#catalogue'}>Catalogue</Link></li>
                 <li onClick={props.doStuff}>
-                    <Link to='/cart'>
+                    <Link to={home + '/cart'}>
                         Cart
                         {(props.cartCounter !== 0) ?
                             <CartCounter counter={props.cartCounter} />
                             : null}
                     </Link>
                 </li>
-                <li onClick={props.doStuff}><Link to='/#about'>About Us</Link></li>
-                <li onClick={props.doStuff}><Link to='/contact'>Contact Us</Link></li>
+                <li onClick={props.doStuff}><Link to={home + '/#about'}>About Us</Link></li>
+                <li onClick={props.doStuff}><Link to={home + '/contact'}>Contact Us</Link></li>
             </ul>
             <hr />
-            <Link to='/cart' >
-                <Button disabled={(props.cartCounter === 0) ? true : false} class='CheckOut' style={{ fontSize: '20px', width: '100%' }} >CHECK OUT</Button>
+            <Link to={home + '/cart'} >
+                <Button doStuff={props.doStuff} disabled={(props.cartCounter === 0) ? true : false} class='CheckOut' style={{ fontSize: '20px', width: '100%' }} >CHECK OUT</Button>
             </Link>
         </aside>
     )

@@ -129,6 +129,6 @@ export const OrderSummary = styled.div`
 `
 export const ButtonDiv = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%
 `

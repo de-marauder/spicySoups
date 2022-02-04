@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink as Link, Route, Routes } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import Payment from '../../components/Payment/Payment';
@@ -20,7 +20,7 @@ import {
     OrderSummary,
     ButtonDiv
 } from './StyledCart'
-import { removeFromCart } from '../../redux/actions/actions';
+// import { removeFromCart } from '../../redux/actions/actions';
 
 const Cart = (props) => {
 
@@ -77,11 +77,13 @@ const Cart = (props) => {
                 <ButtonDiv>
 
                     <Button
+                        disabled={(props.cart.length <= 0) ? true : false }
                         doStuff={props.emptyCart}
                         class={'Submit Order Cancel'} >
                         EMPTY CART
                     </Button>
                     <Button
+                        disabled={(props.cart.length <= 0 && totalPrice <= 0) ? true : false}
                         doStuff={initPaymentModal}
                         class={'Submit Order'} >
                         ORDER

@@ -46,14 +46,6 @@
     border: #f3f4f5 2px solid;
     font-weight: bold;
 }
-.CheckOut:disabled {
-    background: #777;
-    color: #fff;
-    border: #f3f4f5 2px solid;
-}
-.CheckOut:disabled:hover {
-    font-weight: normal
-}
 
 .Order {
     margin: 0 auto;
@@ -77,4 +69,19 @@
 }
 .Cancel:hover {
     color: rgb(235, 61, 61)
+}
+
+.ButtonWrapper button:disabled {
+    background: #777;
+    color: rgb(192, 192, 192);
+    border: #f3f4f5 2px solid;
+    box-shadow: none;
+    font-weight: normal;
+}
+.ButtonWrapper button:disabled:hover {
+    left: 0;
+    top: 0;
+    background: #777;
+    color: rgb(192, 192, 192);
+
 }
