@@ -17,7 +17,7 @@ export const OrdersWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
+    width: 500px;
     margin: 150px auto 50px;
     padding: 20px 0 ;
     background: #8cb340;
@@ -30,6 +30,7 @@ export const OrdersWrapper = styled.div`
 `
 export const RemoveFromCart = styled.span`
     position: absolute;
+    top: -10px;
     right: -10px;
     background: #ff4444;
     line-height: 30px;
@@ -41,10 +42,12 @@ export const RemoveFromCart = styled.span`
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 2px 2px 10px rgb(250, 148, 148);
-    transition: background 0.5s ease-in-out;
+    transition: background 0.2s ease-in-out;
 
     &:hover {
         width: 33px;
+        right: -12px;
+        top: -12px;
         height: 33px;
         background: red
     }

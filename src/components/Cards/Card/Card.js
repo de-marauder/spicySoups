@@ -1,34 +1,71 @@
+import { useState } from 'react'
+import styled from 'styled-components'
 
+import { Order, OrderDesc, OrderImg, OrderTitle, OrderPrice, Naira, RemoveFromCart } from '../../../containers/Cart/StyledCart'
+import Modal from '../../UI/Modal'
+import Button from '../../UI/Button/Button'
 
 import classes from './Card.module.css'
 
-const card = ({ product, addMeal, removeMeal, cart }) => {
+const Card = (props) => {
+
+    let [mealModalActive, toggleMealModal] = useState(false)
 
     const openMealModal = () => {
-
+        toggleMealModal(mealModalActive = true)
+    }
+    const closeMealModal = () => {
+        toggleMealModal(mealModalActive = false)
     }
     let disable = true;
-    if (cart.indexOf(product) === -1) {
+    if (props.cart.indexOf(props.product) === -1) {
         disable = true
     } else {
         disable = false
     }
-    console.log(disable)
-    return (
-        <div onClick={openMealModal} className={classes.Card}>
-            {/* {props.children} */}
-            <div className={classes.ImageWrapper}>
-                <button disabled={disable} onClick={(_) => { removeMeal(_, product) }} className={classes.ToCart + ' ' + classes.RemoveFromCart}>-</button>
-                <button onClick={(_) => { addMeal(_, product) }} className={classes.ToCart + ' ' + classes.AddToCart}>+</button>
-                <img src={product.Img} alt='' />
-            </div>
+    // console.log(disable)
 
-            <div className={classes.Text}>
-                <h4>{product.meal}</h4>
-                <p>{product.price}</p>
+    const Hr = styled.hr`
+        width: 60%;
+        border: 1px solid #8cb340
+    `
+
+    return (
+        <>
+            <div onClick={openMealModal} className={classes.Card}>
+
+                <div className={classes.ImageWrapper}>
+                    <button disabled={disable} onClick={(_) => { props.removeMeal(_, props.product) }} className={classes.ToCart + ' ' + classes.RemoveFromCart}>-</button>
+                    <button onClick={(_) => { props.addMeal(_, props.product) }} className={classes.ToCart + ' ' + classes.AddToCart}>+</button>
+                    <img src={props.product.Img} alt='' />
+                </div>
+
+                <div className={classes.Text}>
+                    <h4>{props.product.meal}</h4>
+                    <p>{props.product.price}</p>
+                </div>
             </div>
-        </div>
+            <Modal style={{
+                left: '0'
+            }} doStuff={() => closeMealModal()} active={mealModalActive} >
+                <RemoveFromCart onClick={closeMealModal} >X</RemoveFromCart>
+                <Order style={{ height: '70%', width: '98%', boxShadow: 'none' }} >
+                    <OrderImg style={{ width: '50%' }} src={props.product.Img} alt={props.product.meal} />
+                    <hr style={{ tranform: 'rotate(90deg)', border: '1px solid #8cb340' }} />
+                    <OrderDesc style={{ width: '50%', justifyContent: 'space-around' }}>
+                        <OrderTitle>{props.product.meal}</OrderTitle>
+                        <Hr />
+                        <p>{props.product.desc.slice(0, 100)}</p>
+                        <Hr />
+                        <OrderPrice>Price: <Naira>N</Naira>{props.product.price.slice(2)}</OrderPrice>
+                        <Button class={'Submit Submit2'}
+                            doStuff={(_) => { props.addMeal(_, props.product) }}
+                            className={classes.ToCart + ' ' + classes.AddToCart}>ADD TO CART</Button>
+                    </OrderDesc>
+                </Order>
+            </Modal>
+        </>
     )
 }
 
-export default card;
+export default Card;

@@ -1,15 +1,32 @@
+.ButtonWrapper button {
+    transition: 0.2s ease-in-out;
+}
+
 .Submit {
     padding: 15px 20px;
     border: solid 2px rgb(140, 179, 64);
-    /* margin: 0 auto; */
     font-size: 18px;
     color: inherit;
     background: transparent
 }
 .Submit:hover {
     background: rgb(140, 179, 64);
+    color: wheat;
 }
-
+.Submit2 {
+    color: rgb(140, 179, 64);
+    font-weight: bold;
+    box-shadow: 1px 3px 10px #888;
+    transition: 0.6 ease-in-out;
+}
+.Submit2:hover {
+    background: rgb(140, 179, 64);
+    box-shadow: 1px 1px 10px #888;
+    color: wheat;
+    position: relative;
+    left: 1px;
+    top: 3px;
+}
 .Menu {
     width: 100px;
     background: linear-gradient(to right, green, rgb(206, 247, 27));
@@ -68,7 +85,8 @@
     font-weight: bold;
 }
 .Cancel:hover {
-    color: rgb(235, 61, 61)
+    color: rgb(235, 61, 61);
+    font-weight: bold;
 }
 
 .ButtonWrapper button:disabled {
@@ -83,5 +101,4 @@
     top: 0;
     background: #777;
     color: rgb(192, 192, 192);
-
 }

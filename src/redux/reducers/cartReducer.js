@@ -30,7 +30,8 @@ export const cartReducer = (state = initialState, action) => {
         case 'EMPTY_CART':
             return {
                 ...state,
-                cart: []
+                cart: [],
+                counter: 0
              }
         case 'CHECKOUT':
             return {

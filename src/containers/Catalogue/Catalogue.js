@@ -7,6 +7,9 @@ import Button from '../../components/UI/Button/Button';
 
 import classes from './Catalogue.module.css';
 
+
+const home = '/spicy_soups'
+
 const Catalogue = (props) => {
 
     return (
@@ -16,7 +19,7 @@ const Catalogue = (props) => {
             <div className={classes.CatalogueItems}>
                 <Cards cart={props.cart} addMeal={props.addItemToCart} removeMeal={props.removeItemFromCart} />
             </div>
-            <Link to='/cart' >
+            <Link to= {home + '/cart'} >
                 <Button class='CheckOut' disabled={(props.cart.length === 0) ? true : false} >CHECK OUT</Button>
             </Link>
         </div >

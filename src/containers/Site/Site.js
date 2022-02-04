@@ -63,7 +63,7 @@ class Site extends Component {
         console.log(this.props.counter)
         return (
             <div className={classes.Site}>
-                <Backdrop doStuff={() => { this.sideBarToggler() }} style={backdropStyle} />
+                <Backdrop doStuff={() => { this.sideBarToggler() }} style={{...backdropStyle, zIndex: '35'}} />
                 <Button
                     class={'Menu'}
                     doStuff={() => { this.sideBarToggler() }}

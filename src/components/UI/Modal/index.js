@@ -10,7 +10,7 @@ const Modal = (props) => {
     return (
             props.active ? 
             <>
-                <Backdrop doStuff={props.doStuff} style={{ zIndex: '25' }} />
+                <Backdrop doStuff={props.doStuff} style={{ ...props.style}} />
                 <ModalStyle>
                     {props.children}
                 </ModalStyle>

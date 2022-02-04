@@ -9,7 +9,7 @@ export const ModalStyle = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    z-index: 35;
+    z-index: 30;
     position: fixed;
     top: 25vh;
     right: calc(40vw/2);
