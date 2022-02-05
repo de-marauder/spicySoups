@@ -55,7 +55,7 @@ export const RemoveFromCart = styled.span`
 export const Orders = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     margin: 25px auto;
     background: white;
     border: 1px solid #8cb340;
@@ -87,13 +87,18 @@ export const Order = styled.div`
     box-shadow: 2px 2px 10px #777;
 
     @media (max-width: 500px) {
-        width: 90%
+        width: 90%;
     }
 `
 export const OrderImg = styled.img`
     width: 30%;
     padding: 5px;
     border-radius: 5px;
+    margin: 0 auto;
+
+    // @media (max-width: 500px) {
+    //     width: 90%;
+    // }
 `
 export const OrderDesc = styled.div`
     width: 50%;
@@ -101,10 +106,11 @@ export const OrderDesc = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 
-    @media (max-width: 500px) {
-        width: 70%
-    }
+    // @media (max-width: 500px) {
+    //     width: 90%
+    // }
 `
 export const OrderTitle = styled.h4`
     font-size: 18px;
@@ -116,7 +122,7 @@ export const OrderPrice = styled.p`
 export const Naira = styled.span`
     text-decoration-line: line-through;
     text-decoration-style: double;
-    padding-inline: 0.5rem
+    padding-left: 10px
 `
 
 export const OrderSummary = styled.div`

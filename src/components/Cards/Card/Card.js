@@ -27,7 +27,8 @@ const Card = (props) => {
 
     const Hr = styled.hr`
         width: 60%;
-        border: 1px solid #8cb340
+        border: 1px solid #8cb340;
+        margin: 10px 0
     `
 
     return (
@@ -49,10 +50,23 @@ const Card = (props) => {
                 left: '0'
             }} doStuff={() => closeMealModal()} active={mealModalActive} >
                 <RemoveFromCart onClick={closeMealModal} >X</RemoveFromCart>
-                <Order style={{ height: '70%', width: '98%', boxShadow: 'none' }} >
-                    <OrderImg style={{ width: '50%' }} src={props.product.Img} alt={props.product.meal} />
-                    <hr style={{ tranform: 'rotate(90deg)', border: '1px solid #8cb340' }} />
-                    <OrderDesc style={{ width: '50%', justifyContent: 'space-around' }}>
+                <Order 
+                    className={classes.Order} 
+                    style={{ height: '70%', width: '98%', boxShadow: 'none' }} >
+                    <OrderImg
+                        className={classes.OrderImg}
+                        src={props.product.Img} alt={props.product.meal} />
+                    <hr style={{
+                        margin: '5px 0',
+                        tranform: 'rotate(90deg)',
+                        border: '1px solid #8cb340'
+                    }} />
+                    <OrderDesc
+                        className={classes.OrderDesc}
+                        style={{
+                            // width: '50%',
+                            justifyContent: 'space-around'
+                        }}>
                         <OrderTitle>{props.product.meal}</OrderTitle>
                         <Hr />
                         <p>{props.product.desc.slice(0, 100)}</p>

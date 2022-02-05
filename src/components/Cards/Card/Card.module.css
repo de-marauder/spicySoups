@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* max-width: 500px; */
+    max-height: 260px;
     background: tomato;
     margin: 1.5em 0;
     /* margin: 50px 20px; */
@@ -82,4 +82,19 @@
     margin: auto;
     background: white;
     font-size: 20px;
+}
+.OrderImg {
+    width: 47%
+}
+@media (max-width: 600px) {
+    .Order {
+        width: 90%;
+        flex-direction: column
+    }
+    .OrderImg {
+        width: 90%;
+    }
+    .OrderDesc {
+        width: 90%
+    }
 }

@@ -14,8 +14,9 @@ export const ModalStyle = styled.div`
     top: 25vh;
     right: calc(40vw/2);
 
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         width: 80%;
+        top: calc((100vh - 500px)/2);
         right: calc(20%/2);
     }
 `

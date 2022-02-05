@@ -14,23 +14,22 @@
 
 .CatalogueItems {
     padding: 50px 20px;
-    /* height: 120vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5em;
     columns: 3;
 }
 
 /* For medium screens */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .CatalogueItems {
-        columns: 2;
-    }
+        grid-template-columns: repeat(2, 1fr)    }
 }
 
 /* For smaller screens */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .CatalogueItems {
-        columns: 1;
-    }
+        grid-template-columns: repeat(1, 1fr)    }
 }
 
 .CatalogueItems div {

@@ -20,7 +20,7 @@ import {
     OrderSummary,
     ButtonDiv
 } from './StyledCart'
-// import { removeFromCart } from '../../redux/actions/actions';
+
 
 const home = '/spicy_soups'
 

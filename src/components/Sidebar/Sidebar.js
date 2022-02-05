@@ -25,7 +25,7 @@ const sidebar = (props) => {
                     </Link>
                 </li>
                 <li onClick={props.doStuff}><Link to={home + '/#about'}>About Us</Link></li>
-                <li onClick={props.doStuff}><Link to={home + '/contact'}>Contact Us</Link></li>
+                <li onClick={props.doStuff}><a href={'#contact'}>Contact Us</a></li>
             </ul>
             <hr />
             <Link to={home + '/cart'} >
