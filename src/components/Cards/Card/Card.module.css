@@ -2,10 +2,9 @@
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: 260px;
+    height: 260px;
     background: tomato;
     margin: 1.5em 0;
-    /* margin: 50px 20px; */
     overflow: hidden;
     border-radius: 100px;
     box-shadow: 0 4px 7px #999;
@@ -22,7 +21,8 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
-    border: 0
+    border: 0;
+    z-index: 20
 }
 .Card .ToCart:disabled {
     background-color: #777
@@ -83,8 +83,8 @@
     background: white;
     font-size: 20px;
 }
-.OrderImg {
-    width: 47%
+.Order .OrderImg {
+    width: 50%
 }
 @media (max-width: 600px) {
     .Order {

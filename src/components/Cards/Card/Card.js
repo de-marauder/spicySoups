@@ -33,12 +33,16 @@ const Card = (props) => {
 
     return (
         <>
-            <div onClick={openMealModal} className={classes.Card}>
+            <div className={classes.Card}>
 
                 <div className={classes.ImageWrapper}>
-                    <button disabled={disable} onClick={(_) => { props.removeMeal(_, props.product) }} className={classes.ToCart + ' ' + classes.RemoveFromCart}>-</button>
-                    <button onClick={(_) => { props.addMeal(_, props.product) }} className={classes.ToCart + ' ' + classes.AddToCart}>+</button>
-                    <img src={props.product.Img} alt='' />
+                    <button
+                        disabled={disable} onClick={(_) => { props.removeMeal(_, props.product) }}
+                        className={classes.ToCart + ' ' + classes.RemoveFromCart}>-</button>
+                    <button
+                        onClick={(_) => { props.addMeal(_, props.product) }}
+                        className={classes.ToCart + ' ' + classes.AddToCart}>+</button>
+                    <img onClick={openMealModal} src={props.product.Img} alt='' />
                 </div>
 
                 <div className={classes.Text}>
@@ -50,8 +54,8 @@ const Card = (props) => {
                 left: '0'
             }} doStuff={() => closeMealModal()} active={mealModalActive} >
                 <RemoveFromCart onClick={closeMealModal} >X</RemoveFromCart>
-                <Order 
-                    className={classes.Order} 
+                <Order
+                    className={classes.Order}
                     style={{ height: '70%', width: '98%', boxShadow: 'none' }} >
                     <OrderImg
                         className={classes.OrderImg}
@@ -73,7 +77,11 @@ const Card = (props) => {
                         <Hr />
                         <OrderPrice>Price: <Naira>N</Naira>{props.product.price.slice(2)}</OrderPrice>
                         <Button class={'Submit Submit2'}
-                            doStuff={(_) => { props.addMeal(_, props.product) }}
+                            doStuff={(_) => { 
+                                props.addMeal(_, props.product)
+                                closeMealModal()
+                                console.log('modal closed')
+                            }}
                             className={classes.ToCart + ' ' + classes.AddToCart}>ADD TO CART</Button>
                     </OrderDesc>
                 </Order>

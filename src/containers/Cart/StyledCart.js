@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
     width: 100vw;
+    height: 2.5em;
     padding: 20px 3em;
     position: fixed;
     top: 0;
@@ -12,6 +13,10 @@ export const Title = styled.h1`
     @media (max-width: 500px) {
         padding: 15px 1em
     }
+`
+export const TitleIcon = styled.img`
+    height: 100%;
+    padding: 10px 0 0 15px
 `
 export const OrdersWrapper = styled.div`
     display: flex;

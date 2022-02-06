@@ -2,10 +2,14 @@ import { useState } from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
+
 import Payment from '../../components/Payment/Payment';
 import Button from '../../components/UI/Button/Button';
 import {
     Title,
+    TitleIcon,
     OrdersWrapper,
     RemoveFromCart,
     Orders,
@@ -20,6 +24,10 @@ import {
     OrderSummary,
     ButtonDiv
 } from './StyledCart'
+
+import Img from '../../assets/images/cart-icon-28356-Windows.ico'
+import shoppingBagIcon from '../../assets/images/shopping-bag.png'
+import classes from './Cart.module.css';
 
 
 const home = '/spicy_soups'
@@ -59,8 +67,19 @@ const Cart = (props) => {
 
     return (
         <div>
-            <Title>Cart</Title>
+            <Title>Cart
+                <TitleIcon src={Img} alt='cart icon' />
+            </Title>
+            {/* <i className={classes.BackIcon + "far fa-arrow-alt-circle-left"}></i> */}
+            <Link className={classes.BackLink} to={home + '/#catalogue'}>
+                {/* <p style={{ width: '50px', height: '50px' }} className={classes.BackIcon}>jibber jabber</p> */}
+                <FontAwesomeIcon style={{width: '50px', height: '50px'}} className={classes.BackIcon} icon={faArrowAltCircleLeft} ></FontAwesomeIcon>
+                back to catalogue
+            </Link>
             <OrdersWrapper>
+                {/* className="fas fa-shopping-cart" */}
+                {/* <FontAwesomeIcon icon={faArrowAltCircleLeft} ></FontAwesomeIcon> */}
+                <TitleIcon style={{ width: '55px', height: '50px', position: 'relative', right: '45%' }} src={shoppingBagIcon} alt='cart icon' />
                 <Orders>
                     <OrderList>
                         <OrderDiv>
@@ -79,7 +98,7 @@ const Cart = (props) => {
                 <ButtonDiv>
 
                     <Button
-                        disabled={(props.cart.length <= 0) ? true : false }
+                        disabled={(props.cart.length <= 0) ? true : false}
                         doStuff={props.emptyCart}
                         class={'Submit Order Cancel'} >
                         EMPTY CART
