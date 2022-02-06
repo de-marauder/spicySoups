@@ -100,10 +100,6 @@ export const OrderImg = styled.img`
     padding: 5px;
     border-radius: 5px;
     margin: 0 auto;
-
-    // @media (max-width: 500px) {
-    //     width: 90%;
-    // }
 `
 export const OrderDesc = styled.div`
     width: 50%;
@@ -113,9 +109,6 @@ export const OrderDesc = styled.div`
     justify-content: center;
     margin: 0 auto;
 
-    // @media (max-width: 500px) {
-    //     width: 90%
-    // }
 `
 export const OrderTitle = styled.h4`
     font-size: 18px;

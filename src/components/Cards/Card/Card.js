@@ -56,7 +56,8 @@ const Card = (props) => {
                 <RemoveFromCart onClick={closeMealModal} >X</RemoveFromCart>
                 <Order
                     className={classes.Order}
-                    style={{ height: '70%', width: '98%', boxShadow: 'none' }} >
+                    style={{ height: '70%', width: '98%', boxShadow: 'none' }}
+                     >
                     <OrderImg
                         className={classes.OrderImg}
                         src={props.product.Img} alt={props.product.meal} />

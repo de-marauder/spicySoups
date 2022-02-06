@@ -87,14 +87,15 @@
     width: 50%
 }
 @media (max-width: 600px) {
-    .Order {
+    
+    div .Order {
         width: 90%;
-        flex-direction: column
+        flex-direction: column;
     }
-    .OrderImg {
+    .Order .OrderImg {
         width: 90%;
     }
-    .OrderDesc {
+    .Order .OrderDesc {
         width: 90%
     }
 }
